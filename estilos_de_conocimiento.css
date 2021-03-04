@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    /* esto es para anular los espacios que asigna el navegador*/
+}
+
+body {
+    background-image: url(img/fuego.jpg);
+    margin: 0;
+    font-family: monospace;
+    background-repeat: no-repeat;
+    /* para evitar q se repita la imagen*/
+    background-position: center;
+    /* para centrar el fondo */
+    background-size: cover;
+    /* para que el fondo ocupe el ancho de la pantalla */
+    background-attachment: fixed;
+    /* para que ocupe el ancho y alto  */
+}
+
+.Contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    /*display: grid;*/
+    grid-template-areas: "cabecera cabecera cabecera" "contenido";
+}
+
+.cabecera {
+   /* background: #7CB4F0;*/
+    color: black;
+    height: 40px;
+    grid-area: cabecera;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.texto_interno {
+    background: #FEFBF0;
+    padding: 30px;
+}
+
+
+p {
+    text-align: justify;
+}
+
+.boton {
+    background: #ea8c8c;
+    color: #000000;
+    height: 40px;
+    grid-area: cabecera;
+    cursor: pointer;
+}

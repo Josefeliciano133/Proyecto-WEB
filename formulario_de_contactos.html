@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Joséfelicianollanto.com</title>
+    <link rel="stylesheet" href="estilo_de_contactos.css">
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#form").toggle(3000);
+
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <form action="" id="form">
+        <center><h2>FORMULARIO DE CONTACTOS</h2></center>
+        <center><input type="text" name="nombre" placeholder="Nombre"></center>
+        <br/>
+        <center><input type="text" name="correo" placeholder="Correo"></center>
+        <br/>
+        <center><input type="text" name="telefono" placeholder="Teléfono"></center>
+        <br/>
+        <center><textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Escriba aquí su mensaje"></textarea></center>
+        <br/>
+        <center><input type="button" value="ENVIAR" id="boton"></center>
+    </form>
+    <br/>
+    <center><button id="b1" class="boton">OCULTAR / MOSTRAR</button></center>
+    <br/>
+    
+</body>
+</html>
